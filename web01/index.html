@@ -5,157 +5,258 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>스타쉽엔터테인먼트</title>
+    <meta name="keywords" content="스타쉽, 스타쉽엔터테인먼트, 킹콩, 킹콩엔터테인먼트, 아이브,몬스타엑스, 우주소녀, 오디션">
     <link rel="icon" href="./img/web_icon.png" type="image/x-icon">
     <meta property="og:site_name" content="스타쉽엔터테인먼트">
     <meta property="og:type" content="website">
     <meta property="og:title" content="스타쉽 ENT">
     <meta property="og:url" content="/">
     <meta property="og:description" content="스타쉽 ENT 공식홈페이지">
-    <meta property="og:image" content="./imag/meta_logo.jpg">
+    <meta property="og:image" content="./imag/meta_logo.jpg"> 
+      
+    <!-- 구형 브라우저 html5태그 인식 -->
+    <!-- 구형 브라우저에서 css animation 인식 -->
+    <!-- 구형 브라우저에서 미디어쿼리 인식 -->
+    <!-- jquery 플러그인 연결 -->
+    <link rel="stylesheet" href="./css/css2.css">
     <style>
-    .logo{float:left; margin-top:30px; margin-right: 5px; margin-bottom: 30px; margin-left: 100px;}
-    .tnb{float: right; margin-top:20px; margin-right: 200px; }
-    .gnb{float:left; text-align:center; list-style-type: none; font-size: 15px;}
-    .sub{height :100px; margin-left:5px; margin-right: 5px;}
-    li{display:inline-block; padding: 10px;}    
-    .vs{vertical-align;}
+    .hd { width: 100%; position:fixed;  top: 0; left: 0; z-index:999; background-color: #fff; height: 165px; }
+    .hd_wrap { width: 1200px; margin: 0 auto; background-color: #fff;}
+    .logo { display:block; width:120px; height:auto; margin-top:30px; margin-bottom: 30px; float:left; }
+    .logo img { display:block; width: 100%; }
+    .tnb { float:right; margin-top: 30px; margin-bottom: 30px;  }
+    .gnb li .enter { display:block; height:40px; line-height: 40px; background-color: #000; color:#fff;  }
+    .tnb a { font-size:14px; color:#000; padding: 14px; font-weight:300;    }
+    .tnb a:hover { font-weight:700; color:orange; }
+    .gnb { clear:both; }
+    .gnb li { float:left; list-style: none; }
+    .gnb li .sub { display:none;  }
+    .gnb > ul > li { width: 20%; text-align: center; }
+    .gnb li .enter { display:block; height:40px; line-height: 40px; background-color: transparent; color:#000  }
+    .gnb li:hover .enter { font-weight:700; color:orange; }
+    .content {width: 1200px; margin: 0 auto; padding-top: 200px; }
+    .pic{width: 1200px; height: 800px; object-fit: fill;}
+    .vs > img { display: block; margin: 0px auto;}
+    .king {float:left ; width: 200px; height: 200px; border-radius: 50%; padding : 20px; }
+    .ft {width:1080px; margin:150px auto 0;}
+    .ft_wrap {width: 1200px; margin: 0 auto; background-color: #fff;}
+    .ft_logo {display:block; width:120px; height:auto; margin-top:30px; margin-bottom: 30px;}
+    
     </style>
 </head>
 <body>
-    <div class="wrap">
-        <header class="hd">
-            <div class="hd_wrap">
-                <a href="" class="logo"><img src="./img/logo.png" alt="로고"></a>
-                <nav class="tnb">
-                    <a href="login.html">로그인</a>
-                    <a href="join.html">회원가입</a>
-                    <a href="sitemap.html">사이트맵</a>
-                </nav>
-                <nav class="gnb">
-                    <ul>
-                       <li class="item1">
-                        <a href="" class="enter">COMPANY</a>
+<div class="wrap">
+    <header class="hd">
+        <div class="hd_wrap">
+            <a href="" class="logo"><img src="img/logo.png" alt="로고"></a>
+            <nav class="tnb">
+                <a href="login.html">로그인</a>
+                <a href="join.html">회원가입</a>
+                <a href="sitemap.html">사이트맵</a>
+            </nav>
+            <nav class="gnb">
+                <ul>
+                    <li class="item1">
+                        <a href="" class="enter">COMPANY</a>            <!--서브페이지 링크-->
                         <ul class="sub">
-                            <li><a href="">회사소개</a></li>
+                            <li><a href="">회사소개</a></li>            
                             <li><a href="">대표인사말</a></li>
                             <li><a href="">연혁</a></li>
                             <li><a href="">오시는길</a></li>
                         </ul>
-                       </li>
-                       <li class="item2">
-                        <a href="" class="enter">ARTISTS</a>
+                    </li>
+                    <li class="item2">
+                        <a href="" class="enter">ARTISTS</a>            <!--서브페이지 링크-->
                         <ul class="sub">
                             <li><a href="">가수</a></li>                   
                         </ul>
-                       </li>
-                       <li class="item3">
-                        <a href="" class="enter">ACTORS</a>
+                    </li>
+                    <li class="item3">
+                        <a href="" class="enter">ACTORS</a>         <!--서브페이지 링크-->
                         <ul class="sub">
                             <li><a href="">배우</a></li>                                  
                         </ul>
-                       </li>
-                       <li class="item4">
-                        <a href="" class="enter">PRCENTER</a>
+                    </li>
+                    <li class="item4">
+                        <a href="" class="enter">PR CENTER</a>            <!--서브페이지 링크-->
                         <ul class="sub">
                             <li><a href="">NOTICE</a></li>
                             <li><a href="">MULTIMEDIA - M/V</a></li>
                             <li><a href="">MULTIMEDIA - DEHIND</a></li>
                             <li><a href="">NEW RELEASE</a></li>
                         </ul>
-                       </li>
-                       <li class="item5">
-                        <a href="" class="enter">AUDITION</a>
+                    </li>
+                    <li class="item5">
+                        <a href="" class="enter">AUDITION</a>           <!--서브페이지 링크-->
                         <ul class="sub">
                             <li><a href="">지원안내</a></li>
                             <li><a href="">지원하기</a></li>
                             <li><a href="">F&Q</a></li>
                         </ul>
-                       </li>
-                    </ul>
-                </nav>                
-            </div>
-        </header>
-        <div class="content">
-            <figure class="vs">
-                <img src="./img/ive_1080.jpg" alt="ive" >
-            </figure>
-            <section class="page" id="page1">
-                <div class="page_wrap">                    
-                    <ul class="lst">
-                        <il class="left">
-                            <iframe width="853" height="480" src="https://www.youtube.com/embed/F0B7HDiY-10" title="IVE 아이브 'After LIKE' MV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>          
-                        </il>
-                        <li class="right">
-                            <ul class="ico lst">
-                                <li>
-                                    <a href="https://www.youtube.com/embed/F0B7HDiY-10">
-                                        <h2>MULTIMEDIA</h2>
-                                        <p>[MV]IVE(아이브)-AFTER LIKE</p> <!-- multimedia로 rink예정-->
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/">
-                                        <h2>NOTICE</h2>
-                                        <p>[시리즈] 유연석 넷플릭스 시리즈 <수리남> 공개 안내</p> <!-- notice page로 rink예정-->
-                                        <p>[예능] 이광수 디즈니+의 오리지널 예능<더 존 : 버텨야 산다>공개 안내</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/">
-                                        <h2>NEW RELEASE</h2>
-                                        <p>[싱글] IVE 3rd SINGLE ALBUM <After LIKE></After></p> <!-- new release로 rink예정-->
-                                        <p>[SPECIAL SINGLE] 우주소녀-Last Sequence</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>                 
-                </div>
-            </section>
-            <section class="page" id="page2">
-                <div class="page_wrap">
-                    <h2 class="page_tit">뭐로하징;;;;;</h2>
-                    <br><br><br><br><br><br><br><br><br><br>
-                </div>
-            </section>
+                    </li>
+                </ul>
+            </nav>                
         </div>
-        <footer class="ft">
-            <div class="ft_wrap">
-                <div class="ft_logo"><img src="img/logo_bt.png" alt="푸터로고"></div>
-                <div class="mid_box">
-                    <p class="addr">
-                        서울시 강남구 삼성로 146길 4-5 스타쉽ENT(06070)<br>
-                        4-5, Samseonng-ro 146-gil, Gangnam-gu, Seoul<br><br>
-                        스타쉽ENT의 모든 컨텐츠는 저작권의 보호를 받고 있습니다.<br><br>
-                        Copyright © STARSHIP ENT all rights Reserved.<br><br>
-                        Mobile Ver
-                    </p>
-                    </nav>
-                </div>
-                <div class="mid_link">
-                    <a href="/">AUDITION</a><br>
-                    <a href="/">CONTACT</a>
-                </div>
-                <div class="cel_box">
-                    <h4>STARSHIP</h4>
-                    <a href="" target="_blank"><img src="img/ico_v.png" alt="v채널"></a>
-                    <a href="" target="_blank"><img src="img/ico_naver.png" alt="네이버"></a>
-                    <a href="" target="_blank"><img src="img/ico_face.png" alt="페이스북"></a>
-                    <a href="" target="_blank"><img src="img/ico_twitter.png" alt="트위터"></a>
-                    <a href="" target="_blank"><img src="img/ico_youtube.png" alt="유튜브"></a>
-                    <a href="" target="_blank"><img src="img/ico_insta.png" alt="인스타그램"></a>
-                    <a href="" target="_blank"><img src="img/ico_post.png" alt="네이버포스트"></a><br><br>
-                    <h4>KINGKONG by STARSHIP</h4>
-                    <a href="" target="_blank"><img src="img/ico_v.png" alt="v채널"></a>
-                    <a href="" target="_blank"><img src="img/ico_naver.png" alt="네이버"></a>
-                    <a href="" target="_blank"><img src="img/ico_face.png" alt="페이스북"></a>
-                    <a href="" target="_blank"><img src="img/ico_twitter.png" alt="트위터"></a>
-                    <a href="" target="_blank"><img src="img/ico_youtube.png" alt="유튜브"></a>
-                    <a href="" target="_blank"><img src="img/ico_weibo.png" alt="웨이보"></a>
-                    <a href="" target="_blank"><img src="img/ico_post.png" alt="네이버포스트"></a>               
-                </div>
+    </header>
+    <div class="content">
+        <figure class="vs">
+            <img src="artists/ive_1080.jpg" alt="ive" >
+        </figure>
+        <section class="page" id="page1">
+            <div class="page_wrap">  
+                <h2 class="page_tit">제목</h2>                 
+                <ul class="lst">
+                    <il class="left">
+                        <iframe width="853" height="480" src="https://www.youtube.com/embed/F0B7HDiY-10" title="IVE 아이브 'After LIKE' MV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>          
+                    </il>
+                    <li class="right">
+                        <ul class="ico_lst">
+                            <li>
+                                <a href="https://www.youtube.com/embed/F0B7HDiY-10" class="icon1"></a>
+                                    <h3 class="cate_tit">MULTIMEDIA</h3>
+                                    <img src="img/thumb-3534953646.jpg" alt="">
+                                    <p class="cate_com">[MV]IVE(아이브)-AFTER LIKE</p> <!-- multimedia로 rink예정-->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/" class="icon2">
+                                    <h3 class="cate_tit">NOTICE</h3>
+                                    <p class="cate_com">[시리즈] 유연석 넷플릭스 시리즈 <수리남> 공개 안내</p> <!-- notice page로 rink예정-->
+                                    <p class="cate_com">[예능] 이광수 디즈니+의 오리지널 예능<더 존 : 버텨야 산다>공개 안내</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/" class="icon3">
+                                    <h3 class="cate_tit">NEW RELEASE</h3>
+                                    <p class="cate_com">[싱글] IVE 3rd SINGLE ALBUM <After LIKE></After></p> <!-- new release로 rink예정-->
+                                    <p class="cate_com">[SPECIAL SINGLE] 우주소녀-Last Sequence</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>                 
             </div>
-        </footer>
+        </section>
+        <section class="page" id="page2">
+            <div class="page_wrap">
+                <h2 class="page_tit">ARTISTS</h2>
+                <ul class="pic_lst">
+                    <li>
+                        <a href="">
+                            <img src="artists/ive.jpg" alt="아이브" class="pic">
+                            <div class="hv_box">
+                                <h3 class="pic_tit">아이브</h3>                                   
+                            </div>
+                        </a>
+                    </li> 
+                    <li>
+                        <a href="">
+                            <img src="artists/monstaXjpg.jpg" alt="몬스타엑스" class="pic">
+                            <div class="hv_box">
+                                <h3 class="pic_tit">몬스타엑스</h3>                                    
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="artists/wjsn.jpg" alt="우주소녀" class="pic">
+                            <div class="hv_box">
+                                <h3 class="pic_tit">우주소녀</h3>                                    
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="artists/cravity.jpg" alt="크래비티" class="pic">
+                            <div class="hv_box">
+                                <h3 class="pic_tit">크래비티</h3>                                    
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="artists/kwill.jpg" alt="케이윌" class="pic">
+                            <div class="hv_box">
+                                <h3 class="pic_tit">케이윌</h3>                                    
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="artists/jeongsewoon_1.jpg" alt="정세운" class="pic">
+                            <div class="hv_box">
+                                <h3 class="pic_tit">정세운</h3>                                    
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="artists/brothersu.jpg" alt="브라더수" class="pic">
+                            <div class="hv_box">
+                                <h3 class="pic_tit">브라더수</h3>                                    
+                            </div>
+                        </a>
+                    </li>                        
+                </ul>
+            </div>
+        </section>
+        <section class="page" id="page3">
+            <div class="page_wrap">
+                <h2 class="page_tit">KINGKONG by STARSHIP<br>ACTORS</h2>
+                <ul class="circle_lst lst1">
+                    <li><a href=""><img src="actors/kimbeom.jpg" alt="김범" class="king"></a></li>
+                    <li><a href=""><img src="actors/ryuhyeyoung.jpg" alt="류혜영" class="king"></a></li>
+                    <li><a href=""><img src="actors/songseungheon.jpg" alt="송승헌" class="king"></a></li>
+                    <li><a href=""><img src="actors/songhayoon.jpg" alt="송하윤" class="king"></a></li>
+                    <li><a href=""><img src="actors/yooyeonseok.jpg" alt="유연석" class="king"></a></li>
+                    <li><a href=""><img src="actors/leekwangsoo.jpg" alt="이광수" class="king"></a></li>
+                    <li><a href=""><img src="actors/leedongwook.jpg" alt="이동욱" class="king"></a></li>
+                    <li><a href=""><img src="actors/leemeyeon.jpg" alt="이미연" class="king"></a></li>
+                    <li><a href=""><img src="actors/jeonsomin.jpg" alt="전소민" class="king"></a></li>
+                    <li><a href=""><img src="actors/choyoonhee.jpg" alt="조윤희" class="king"></a></li>
+                    <li><a href=""><img src="actors/chaesoobin.jpg" alt="채수빈" class="king"></a></li>
+                    <li><a href=""><img src="actors/choiwonmyeong.jpg" alt="최원명" class="king"></a></li>                   
+                </ul>
+            </div>
+        </section>
+    </div>    
+    <footer class="ft">
+        <div class="ft_wrap">
+            <div class="ft_logo"><img src="img/logo_bt.png" alt="푸터로고"></div>
+            <div class="mid_box">
+                <p class="addr">
+                    서울시 강남구 삼성로 146길 4-5 스타쉽ENT(06070)<br>
+                    4-5, Samseonng-ro 146-gil, Gangnam-gu, Seoul<br><br>
+                    스타쉽ENT의 모든 컨텐츠는 저작권의 보호를 받고 있습니다.<br><br>
+                    Copyright © STARSHIP ENT all rights Reserved.<br><br>
+                    Mobile Ver
+                </p>
+                </nav>
+            </div>
+            <div class="mid_link">
+                <a href="/">AUDITION</a><br>
+                <a href="/">CONTACT</a>
+            </div>
+            <div class="cel_box">
+                <h4>STARSHIP</h4>
+                <a href="" target="_blank"><img src="img/ico_v.png" alt="v채널"></a>
+                <a href="" target="_blank"><img src="img/ico_naver.png" alt="네이버"></a>
+                <a href="" target="_blank"><img src="img/ico_face.png" alt="페이스북"></a>
+                <a href="" target="_blank"><img src="img/ico_twitter.png" alt="트위터"></a>
+                <a href="" target="_blank"><img src="img/ico_youtube.png" alt="유튜브"></a>
+                <a href="" target="_blank"><img src="img/ico_insta.png" alt="인스타그램"></a>
+                <a href="" target="_blank"><img src="img/ico_post.png" alt="네이버포스트"></a><br><br>
+                <h4>KINGKONG by STARSHIP</h4>
+                <a href="" target="_blank"><img src="img/ico_v.png" alt="v채널"></a>
+                <a href="" target="_blank"><img src="img/ico_naver.png" alt="네이버"></a>
+                <a href="" target="_blank"><img src="img/ico_face.png" alt="페이스북"></a>
+                <a href="" target="_blank"><img src="img/ico_twitter.png" alt="트위터"></a>
+                <a href="" target="_blank"><img src="img/ico_youtube.png" alt="유튜브"></a>
+                <a href="" target="_blank"><img src="img/ico_weibo.png" alt="웨이보"></a>
+                <a href="" target="_blank"><img src="img/ico_post.png" alt="네이버포스트"></a>               
+            </div>
+        </div>
+    </footer>
     </div>    
 </body>
 </html>
