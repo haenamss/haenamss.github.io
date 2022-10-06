@@ -1,0 +1,34 @@
+html 디자인 리셋(초기화)
+
+
+CSS Tools: Reset CSS - meyerweb.com
+
+
+
+
+https://necolas.github.io/normalize.css/
+
+-----------------------------------------------------------------------------
+
+
+clear fix 처리
+조상과 부모가 크기를 가질수 있게 됨
+
+
+부모 좌표를 안 잡아주면 무조건 맨 꼭대기 기준으로 위치를 잡음 
+이럴대 부모 클래스에 position:relative;
+
+text-indent  들여쓰기
+
+
+
+
+
+메뉴 어디에 호버 하던지 서브 메뉴가 나오도록
+gnb : hover {display : block;}
+
+
+
+마진
+플롯
+클리어
