@@ -22,25 +22,56 @@
     <style>
     .hd { width: 100%; position:fixed;  top: 0; left: 0; z-index:999; background-color: #fff; height: 165px; }
     .hd_wrap { width: 1200px; margin: 0 auto; background-color: #fff;}
-    .logo { display:block; width:120px; height:auto; margin-top:40px; margin-bottom: 40px; float:left; }
-    .logo img { display:block; width: 100%; }
-    .tnb { float:right; margin-top: 40px; margin-bottom: 40px;}
-    .tnb a { font-size:13px; color:#000; padding: 30px; font-weight:300; }
+    .logo { display:block; width:120px; height:auto; margin-top:30px; margin-bottom: 30px; float:left; }
+    .logo img { display:block; width: 100%; } 
+    .tnb { float:right; margin: 40px;}
+    .tnb a { font-size:14px; color:#000; padding: 14px; }
     .tnb a:hover { font-weight:700; color:orange; }
-    .gnb { clear:both; }
-    .gnb li { float:left; list-style: none; }
-    .gnb li .sub { display:none; }
-    .gnb > ul > li { width: 20%; text-align: center;margin-bottom: 20px; }
-    .gnb li .enter { display:block; height:40px; line-height: 40px; background-color: transparent; color:#000  }
+    .gnb { clear:both; width: 100%; }
+    .gnb:after { content:""; display:block; clear:both; }
+    .gnb > ul:after { content:""; display:block; clear:both; } 
+
+
+    .gnb > ul > li { float:left; width: 20%; height:40px; line-height: 40px; position: relative}
+    .gnb .sub { display:none; width: 100%; height:auto; position:absolute; top:40px; background-color:#fff; left: 0; z-index:90; height: 156px;border-top-color: rgb(223, 224, 226); align:center;
+    border-top-style: solid;border-top-width: 1px;border-right-color: rgb(223, 224, 226);border-right-style: solid;border-right-width: 1px;border-bottom-color: rgb(223, 224, 226);
+    border-bottom-style: solid; border-bottom-width: 1px; border-left-color: rgb(223, 224, 226); border-left-style: solid;border-left-width: 1px;}
+    
+    /* 동생이 after */
+    
     .gnb li:hover .enter { font-weight:700; color:orange; }
-    .content {width: 1200px; margin: 0 auto; padding-top: 200px; }
+    .gnb:hover li .sub { display:block; }    
+    .gnb li { float:left; list-style: none; }
+    .gnb li .sub li { clear:both; height: 30px; line-height: 30px; border-bottom:1px solid #fff; }
+    .gnb li .sub li h5 {color:#111; font-size:14px; width: 100%; display:block; text-indent:5em; overflow: hidden; white-space:nowrap; text-overflow: ellipsis}  
+    .gnb li .sub li a { color:#111; font-size:13px; width: 100%; display:block; text-indent:5em; overflow: hidden; white-space:nowrap; text-overflow: ellipsis}
+    .gnb li .sub li:hover a { color:darkorange; }    
+    .gnb li .enter { display:block; height:40px; text-align: center; line-height: 40px; background-color: transparent; color:#000  }      
     .pic{width: 1200px; height: 800px; object-fit: fill;}
-    .vs > img { display: block; margin: 0px auto;}
+    .content { clear: both; width: 100%; }
+    .vs { clear:both; width: 100%; height:100vh; overflow:hidden; }
+    .vdo { display:block; width:1200px;margin: 0 auto; padding-top: 200px;}  /* 메인 아이브 사진 */
+
+
+    .page { clear:both; width: 100%; }
+    .page_wrap { width: 1200px; margin: 0 auto;  }
+    #page1, #page3 { background-color:#fff; }
+    .page_tit { text-align: center; font-size:32px; padding-top:100px; padding-bottom: 50px; }
+
+
+    .lst { clear:both; width: 1200px; }
+    .lst:after { content:""; display:block; clear: both;}
+    
+    .lst li.left { float:left; width:800px; height:400px; }
+    .lst li.right { float:right; width: 400px; height: 410px; overflow: hidden; white-space:nowrap; text-overflow: ellipsis; }
+    
+    .lst li.right > ul > li > a {color:orange ;}
+    .lst li.right > ul > li > a > p {margin-bottom: 2px; color: #000;}
+    /* footer */
     .king {float:left ; width: 200px; height: 200px; border-radius: 50%; padding : 20px; }
     .ft {width:1080px; margin:150px auto 0;}
     .ft_wrap {width: 1200px; margin: 0 auto; background-color: #fff;}
-    .ft_logo {display:block; width:120px; height:auto; margin-top:30px; margin-bottom: 30px;}
-    
+    .ft_logo {display:block; width:120px; height:auto; margin-top:30px; margin-bottom: 30px;}    
     </style>
 </head>
 <body>
@@ -58,6 +89,7 @@
                     <li class="item1">
                         <a href="" class="enter">COMPANY</a>            <!--서브페이지 링크-->
                         <ul class="sub">
+                            <li><h5>COMPANY</h5></li>                            
                             <li><a href="">회사소개</a></li>            
                             <li><a href="">대표인사말</a></li>
                             <li><a href="">연혁</a></li>
@@ -67,18 +99,21 @@
                     <li class="item2">
                         <a href="" class="enter">ARTISTS</a>            <!--서브페이지 링크-->
                         <ul class="sub">
+                            <li><h5>ARTISTS</h5></li>                            
                             <li><a href="">가수</a></li>                   
                         </ul>
                     </li>
                     <li class="item3">
                         <a href="" class="enter">ACTORS</a>         <!--서브페이지 링크-->
                         <ul class="sub">
+                            <li><h5>ACTORS</h5></li>                            
                             <li><a href="">배우</a></li>                                  
                         </ul>
                     </li>
                     <li class="item4">
                         <a href="" class="enter">PR CENTER</a>            <!--서브페이지 링크-->
                         <ul class="sub">
+                            <li><h5>PR CENTE</h5></li>                            
                             <li><a href="">NOTICE</a></li>
                             <li><a href="">MULTIMEDIA - M/V</a></li>
                             <li><a href="">MULTIMEDIA - DEHIND</a></li>
@@ -88,6 +123,7 @@
                     <li class="item5">
                         <a href="" class="enter">AUDITION</a>           <!--서브페이지 링크-->
                         <ul class="sub">
+                            <li><h5>AUDITION</h5></li>
                             <li><a href="">지원안내</a></li>
                             <li><a href="">지원하기</a></li>
                             <li><a href="">F&Q</a></li>
@@ -99,40 +135,40 @@
     </header>
     <div class="content">
         <figure class="vs">
-            <img src="artists/ive1200x800.jpg" alt="ive" >
+            <img src="artists/ive1200x800.jpg" class="vdo" alt="ive" >
         </figure>
         <section class="page" id="page1">
             <div class="page_wrap">  
-                <h2 class="page_tit">제목</h2>                 
+                <h2 class="page_tit"></h2>                 
                 <ul class="lst">
                     <il class="left">
-                        <iframe width="853" height="480" src="https://www.youtube.com/embed/F0B7HDiY-10" title="IVE 아이브 'After LIKE' MV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>          
+                        <iframe name="vdo2" id="vdo" width="760" height="422" src="https://www.youtube.com/embed/F0B7HDiY-10" title="IVE 아이브 'After LIKE' MV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
                     </il>
                     <li class="right">
                         <ul class="ico_lst">
-                            <li>
-                                <a href="https://www.youtube.com/embed/F0B7HDiY-10" class="icon1"></a>
-                                    <h3 class="cate_tit">MULTIMEDIA</h3>
-                                    <img src="img/thumb-3534953646.jpg" alt="">
-                                    <p class="cate_com">[MV]IVE(아이브)-AFTER LIKE</p> <!-- multimedia로 rink예정-->
-                                </a>
+                            <li>                                
+                                <a href="/" class="icon1">
+                                    <p><h3 class="cate_tit">MULTIMEDIA</h3></p>
+                                    <p><img src="img/thumb-3534953646.jpg" alt=""></p>  
+                                    <p class="cate_com"><strong>[MV]</strong> IVE(아이브) - AFTER LIKE</p><br> <!-- multimedia로 rink예정-->                                                            
+                                </a>                                
                             </li>
                             <li>
                                 <a href="/" class="icon2">
-                                    <h3 class="cate_tit">NOTICE</h3>
-                                    <p class="cate_com">[시리즈] 유연석 넷플릭스 시리즈 <수리남> 공개 안내</p> <!-- notice page로 rink예정-->
-                                    <p class="cate_com">[예능] 이광수 디즈니+의 오리지널 예능<더 존 : 버텨야 산다>공개 안내</p>
-                                </a>
+                                    <p><h3 class="cate_tit">NOTICE</h3></p>
+                                    <p class="cate_com"><strong>[시리즈]</strong> 유연석 넷플릭스 시리즈 <수리남> 공개 안내</p> <!-- notice page로 rink예정-->
+                                    <p class="cate_com"><strong>[예능]</strong> 이광수 디즈니+ 의 오리지널 예능<더 존 : 버텨야 산다>공개 안내</p><br>
+                                </a>                                
                             </li>
                             <li>
                                 <a href="/" class="icon3">
-                                    <h3 class="cate_tit">NEW RELEASE</h3>
-                                    <p class="cate_com">[싱글] IVE 3rd SINGLE ALBUM <After LIKE></After></p> <!-- new release로 rink예정-->
-                                    <p class="cate_com">[SPECIAL SINGLE] 우주소녀-Last Sequence</p>
+                                    <p><h3 class="cate_tit">NEW RELEASE</h3></p>
+                                    <p class="cate_com"><strong>[싱글]</strong> IVE 3rd SINGLE ALBUM</p> <!-- new release로 rink예정-->
+                                    <p class="cate_com"><strong>[SPECIAL SINGLE]</strong> 우주소녀 - Last Sequence</p><br>
                                 </a>
                             </li>
                         </ul>
-                    </li>
+                    </li>       <!-- clone 어쩌구 ... obj 어쩌구...........j 쿼리로 넣으라는데 ............-->
                 </ul>                 
             </div>
         </section>
@@ -158,7 +194,7 @@
                     </li>
                     <li>
                         <a href="">
-                            <img src="artists/wjsn.jpg" alt="우주소녀" class="pic">
+                            <img src="artists/wjsn1200x800.jpg" alt="우주소녀" class="pic">
                             <div class="hv_box">
                                 <h3 class="pic_tit">우주소녀</h3>                                    
                             </div>
@@ -166,7 +202,7 @@
                     </li>
                     <li>
                         <a href="">
-                            <img src="artists/cravity.jpg" alt="크래비티" class="pic">
+                            <img src="artists/cravity1200x800.jpg" alt="크래비티" class="pic">
                             <div class="hv_box">
                                 <h3 class="pic_tit">크래비티</h3>                                    
                             </div>
@@ -174,7 +210,7 @@
                     </li>
                     <li>
                         <a href="">
-                            <img src="artists/kwill.jpg" alt="케이윌" class="pic">
+                            <img src="artists/kwill1200x800.jpg" alt="케이윌" class="pic">
                             <div class="hv_box">
                                 <h3 class="pic_tit">케이윌</h3>                                    
                             </div>
@@ -190,7 +226,7 @@
                     </li>
                     <li>
                         <a href="">
-                            <img src="artists/brothersu.jpg" alt="브라더수" class="pic">
+                            <img src="artists/brothersy860.jfif" alt="브라더수" class="pic">
                             <div class="hv_box">
                                 <h3 class="pic_tit">브라더수</h3>                                    
                             </div>
